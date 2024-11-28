@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A fictitious online store created for a project exam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="awesome/css/solid.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/fontawesome.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/brands.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="icon" href="images/hippo.svg" type="image/icon" id="hippo">
+        <title>Produktsiden til prosjekteksamen Webutvikling HIOF'24</title>
+    </head>
+    <body>
+        <header id="globalHeader">
+            <nav class="skip">
+                <a href="#main">Skip to content</a>
+            </nav>
+            <nav aria-label="Primary" id="globalNav">
+                <label aria-label="search field">
+                    <input type="search" placeholder="Search..." name="search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul id="headerLinks">
+                    <li>
+                        <a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a>
+                    </li>
+                    <!--Image by <a href="https://pixabay.com/users/biancavandijk-9606149/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Bianca Van Dijk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Pixabay</a>-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact us</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#" aria-label="User Profile"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#" aria-label="Favorites"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="checkout.html" aria-label="Checkout"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <nav>
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElitempement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html" itemprop="item"><span itemprop="name">Home</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    <!--ADD THIS ICON IN CSS!!!  <i class="fa-solid fa-chevron-right"></i>  -->
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html#popularCategories" itemprop="item"><span itemprop="name">Categories</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="product.html" itemprop="item"><span itemprop="name">Product Name</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sticky" itemscope itemtype="https://schema.org/Product">
+                <figure class="productImages">   <!--H-SOMETHING-->
+                    <picture class="largeProductImages">
+                        <source srcset="images/products/cat1920.jpg" media="(min-width: 1200px)">
+                        <source srcset="images/products/cat1280.jpg" media="(min-width: 600px)">
+                        <img class="pictureImg" src="images/products/cat640.jpg" itemprop="image" alt="Greige pleather skirt, black cropped ribbed top, red-haired woman holding a black-and-white cat">
+                    <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                    </picture>
+                    <aside>
+                        <picture>
+                            <source srcset="images/products/cat1920.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/products/cat1280.jpg" media="(min-width: 600px)">
+                            <img class="pictureImg" src="images/products/cat640.jpg" alt="Zoomed-in image of a green silk-looking skirt, woman holding beige shoes">
+                        <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                        </picture>
+                        <picture>
+                            <source srcset="images/products/cat1920.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/products/cat1280.jpg" media="(min-width: 600px)">
+                            <img class="pictureImg" src="images/products/cat640.jpg" alt="Zoomed-in image of a green silk-looking skirt walking up stairs">
+                        <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                        </picture>
+                        <picture>
+                            <source srcset="images/products/cat1920.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/products/cat1280.jpg" media="(min-width: 600px)">
+                            <img class="pictureImg" src="images/products/cat640.jpg" alt="Zoomed-in image of a green silk-looking skirt in a new exciting way">
+                        <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                        </picture>
+                </aside>
+                </figure>
+                <section id="productPurchaseInfo">
+                    <h1 itemprop="name">Product Name</h1>
+                    <a href="#" itemprop="brand">Brand name</a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: <span itemprop="price">1999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p> 
+                    <p>Color: <span itemprop="color">beige</span></p>
+                    <ul>
+                        <li>
+                            <button id="sizeButton" title="Select an option from the list">Choose your size <i class="fa-solid fa-chevron-down"></i></button>
+                            <ul>
+                                <li><a href="#">XS</a></li>
+                                <li><a href="#">S</a></li>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">L</a></li>
+                                <li><a href="#">XL</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>Add to shopping basket</button> 
+                            <button aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        </li>
+                    </ul>
+                </section>
+                <ul id="productDescription">
+                    <li>
+                        <details>
+                            <summary>Material and Care</summary>
+                            <ul>
+                                <li itemprop="material">
+                                    70% Acrylic, 30% Cotton
+                                </li>
+                                <li>
+                                    Eu ullamcorper nisl maximus.
+                                </li>
+                                <li>
+                                    Vestibulum vestibulum vitae elit non semper. 
+                                </li>
+                                <li>
+                                    Sed justo odio, pharetra sed finibus at, pharetra eu erat.
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Product Details</summary>
+                            <p itemprop="description">Fusce suscipit arcu id felis efficitur, eu ullamcorper nisl maximus. Vestibulum vestibulum vitae elit non semper. 
+                                Sed justo odio, pharetra sed finibus at, pharetra eu erat. Cras pellentesque odio ac leo ornare lobortis.
+                                Cras feugiat ipsum ex, vel auctor sem varius sit amet.</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Size Chart</summary>
+                            <table>
+                                <tr>
+                                    <th scope="row">Sizes</th>
+                                    <th class="rightAlign" scope="col">XS</th>
+                                    <th class="rightAlign" scope="col">S</th>
+                                    <th class="rightAlign" scope="col">M</th>
+                                    <th class="rightAlign" scope="col">L</th>
+                                    <th class="rightAlign" scope="col">XL</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Chest</th>
+                                    <td>80</td>
+                                    <td>84</td>
+                                    <td>96</td>
+                                    <td>104</td>
+                                    <td>110</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Waist</th>
+                                    <td>64</td>
+                                    <td>72</td>
+                                    <td>80</td>
+                                    <td>88</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hips</th>
+                                    <td>88</td>
+                                    <td>96</td>
+                                    <td>104</td>
+                                    <td>112</td>
+                                    <td>117</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Shoulder</th>
+                                    <td>38</td>
+                                    <td>39</td>
+                                    <td>40</td>
+                                    <td>41</td>
+                                    <td>42</td>
+                                </tr>
+                            </table>
+                        </details>
+                    </li>
+                </ul>
+                <section class="reviews" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <h3>Reviews</h3>
+                    <div class="reviewContent" aria-label="3 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p itemprop="reviewCount">32</p>
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="bestRating" content="5">
+                        <meta itemprop="worstRating" content="1">
+                    </div>
+                </section>
+            </div>
+            <aside id="similarProducts">
+                <h2>Similar Products</h2>
+                <a href="#" class="moreLink">See more similar products <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="sidewaysScroll">
+                    <article itemscope itemtype="https://schema.org/Product"> 
+                        <a href="product.html" class="productImage">
+                            <picture>
+                                <!--Etter Lighthouse-analyse er min-width-grensene endret i samtlige artikler.-->
+                                <source srcset="images/products/kingfisher1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/kingfisher1280.jpg" media="(min-width: 1200px)">
+                                <img itemprop="image" src="images/products/kingfisher640.jpg" alt="Kingfisher splashing just above water's surface">
+                           <!--Image by <a href="https://pixabay.com/users/bergadder-20679/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Robert Balog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Pixabay</a>-->
+                            </picture>
+                        </a>
+                        <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        <a href="product.html">
+                            <h3 itemprop="name">Product name</h3>
+                        </a>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <aside aria-label="2 out of 5 stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span itemprop="ratingCount">542</span> reviews
+                            </p>
+                        </aside>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Product"> 
+                        <a href="product.html" class="productImage">
+                            <picture>
+                                <source srcset="images/products/kingfisher1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/kingfisher1280.jpg" media="(min-width: 1200px)">
+                                <img itemprop="image" src="images/products/kingfisher640.jpg" alt="Kingfisher splashing just above water's surface">
+                           <!--Image by <a href="https://pixabay.com/users/bergadder-20679/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Robert Balog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Pixabay</a>-->
+                            </picture>
+                        </a>
+                        <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        <a href="product.html">
+                            <h3 itemprop="name">Product name</h3>
+                        </a>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <aside aria-label="2 out of 5 stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span itemprop="ratingCount">542</span> reviews
+                            </p>
+                        </aside>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Product"> 
+                        <a href="product.html" class="productImage">
+                            <picture>
+                                <source srcset="images/products/kingfisher1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/kingfisher1280.jpg" media="(min-width: 1200px)">
+                                <img itemprop="image" src="images/products/kingfisher640.jpg" alt="Kingfisher splashing just above water's surface">
+                           <!--Image by <a href="https://pixabay.com/users/bergadder-20679/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Robert Balog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Pixabay</a>-->
+                            </picture>
+                        </a>
+                        <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        <a href="product.html">
+                            <h3 itemprop="name">Product name</h3>
+                        </a>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <aside aria-label="2 out of 5 stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span itemprop="ratingCount">542</span> reviews
+                            </p>
+                        </aside>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Product"> 
+                        <a href="product.html" class="productImage">
+                            <picture>
+                                <source srcset="images/products/kingfisher1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/kingfisher1280.jpg" media="(min-width: 1200px)">
+                                <img itemprop="image" src="images/products/kingfisher640.jpg" alt="Kingfisher splashing just above water's surface">
+                           <!--Image by <a href="https://pixabay.com/users/bergadder-20679/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Robert Balog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Pixabay</a>-->
+                            </picture>
+                        </a>
+                        <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        <a href="product.html">
+                            <h3 itemprop="name">Product name</h3>
+                        </a>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <aside aria-label="2 out of 5 stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span itemprop="ratingCount">542</span> reviews
+                            </p>
+                        </aside>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Product"> 
+                        <a href="product.html" class="productImage">
+                            <picture>
+                                <source srcset="images/products/kingfisher1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/kingfisher1280.jpg" media="(min-width: 1200px)">
+                                <img itemprop="image" src="images/products/kingfisher640.jpg" alt="Kingfisher splashing just above water's surface">
+                           <!--Image by <a href="https://pixabay.com/users/bergadder-20679/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Robert Balog</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1068684">Pixabay</a>-->
+                            </picture>
+                        </a>
+                        <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                        <a href="product.html">
+                            <h3 itemprop="name">Product name</h3>
+                        </a>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <aside aria-label="2 out of 5 stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span itemprop="ratingCount">542</span> reviews
+                            </p>
+                        </aside>
+                    </article>
+                </div>
+            </aside>
+        </main>
+        <nav id="skipToTop" class="sticky"><a href="#globalHeader"><i class="fa-solid fa-chevron-up"></i>Back to Top</a></nav>
+        <footer>
+            <h3><a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a></h3>
+            <p>Duis interdum, ex vitae vulputate dictum, est quam fringilla quam, ut consectetur ante quam vitae libero</p>
+            <section id="contact" itemscope itemtype="https://schema.org/ContactPoint">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li itemprop="contactType" content="Office">Address:</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">B R A Veien 4, </span>
+                        <span itemprop="postalCode">1757</span>
+                        <span itemprop="addressRegion"> Halden</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li itemprop="contactType" content="Office">Telephone:</li>
+                    <li itemprop="telephone">69 60 80 00</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i></li>
+                    <li itemprop="contactType" content="Office">Email:</li>
+                    <li itemprop="email">halden@hiof.no</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li>Opening Hours:</li>
+                    <li itemprop="hoursAvailable" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <meta itemprop="dayOfWeek" content="Monday,Tuesday,Wednesday,Thursday,Friday">
+                        Mon-Fri:
+                        <span itemprop="opens" content="08:00">08:00</span> - 
+                        <span itemprop="closes" content="15:00">15:00</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="shortcuts">
+                <h4>Shortcuts</h4>
+                <ul>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="WCAG.pdf" target="_blank">Tilgjengelighet!</a></li>
+                </ul>
+            </section>
+            <section class="icons">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>

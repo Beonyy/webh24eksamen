@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A fictitious online store created for a project exam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="awesome/css/solid.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/fontawesome.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/brands.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="icon" href="images/hippo.svg" type="image/icon" id="hippo">
+        <title>Kasse-siden til prosjekteksamen Webutvikling HIOF'24</title>
+    </head>
+    <body>
+        <header id="globalHeader">
+            <nav class="skip">
+                <a href="#main">Skip to content</a>
+            </nav>
+            <nav aria-label="Primary" id="globalNav">
+                <label aria-label="search field">
+                    <input type="search" placeholder="Search..." name="search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul id="headerLinks">
+                    <li>
+                        <a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a>
+                    </li>
+                    <!--Image by <a href="https://pixabay.com/users/biancavandijk-9606149/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Bianca Van Dijk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Pixabay</a>-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact us</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#" aria-label="User Profile"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#" aria-label="Favorites"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="checkout.html" aria-label="Checkout"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <a href="product.html" id="goBack"><i class="fa-solid fa-arrow-left"></i>Continue shopping</a>
+            <div class="flexContainer">
+                <h1 id="main">Checkout</h1>
+                <section class="shoppingBag">
+                    <h2 class="checkoutHeading">1. Your shopping bag</h2>
+                    <article class="shoppingBagItem" itemscope itemtype="https://schema.org/Product">
+                        <a href="product.html">
+                            <picture>
+                                <source srcset="images/products/cat1920.jpg" media="(min-width: 3000px)"> <!--Samtlige artiklers bilders min-width er økt etter anbefaling fra Lighthouse-->
+                                <source srcset="images/products/cat1280.jpg" media="(min-width: 1200px)">
+                                <img src="images/products/cat640.jpg" itemprop="image" alt="Greige pleather skirt, black cropped ribbed top, red-haired woman holding a black-and-white cat">
+                            <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                            </picture>
+                        </a>
+                        <h3 itemprop="name">Product name</h3>
+                        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            Kr. <span itemprop="price">1999</span>
+                            <meta itemprop="priceCurrency" content="NOK">
+                        </p>
+                        <p>Color: <span itemprop="color">Beige</span></p>
+                        <form>
+                            <label for="size">Size</label>
+                            <select id="size">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" name="amount" min="1" max="50" value="1">
+                        </form>
+                        <aside>
+                            <ul>
+                                <li>
+                                    <button aria-label="Favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button aria-label="Remove product">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </aside>
+                    </article>
+                    <article class="shoppingBagItem">
+                        <a href="product.html">
+                            <picture>
+                                <source srcset="images/products/cat1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/cat1280.jpg" media="(min-width: 1200px)">
+                                <img src="images/products/cat640.jpg" alt="Greige pleather skirt, black cropped ribbed top, red-haired woman holding a black-and-white cat">
+                            <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                            </picture>
+                        </a>
+                        <h3>Product name</h3>
+                        <p>Kr. 1999</p>
+                        <p>Color: Beige</p>
+                        <form>
+                            <label for="size1">Size</label>
+                            <select id="size1">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <label for="amount1">Amount</label>
+                            <input type="number" id="amount1" name="amount" min="1" max="50" value="1">
+                        </form>
+                        <aside>
+                            <ul>
+                                <li>
+                                    <button aria-label="Favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button aria-label="Remove product">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </aside>
+                    </article>
+                    <article class="shoppingBagItem">
+                        <a href="product.html">
+                            <picture>
+                                <source srcset="images/products/cat1920.jpg" media="(min-width: 3000px)">
+                                <source srcset="images/products/cat1280.jpg" media="(min-width: 1200px)">
+                                <img src="images/products/cat640.jpg" alt="Greige pleather skirt, black cropped ribbed top, red-haired woman holding a black-and-white cat">
+                            <!--Bilde av Beatriz Paludetto: https://www.pexels.com/nb-no/bilde/2039887/-->
+                            </picture>
+                        </a>
+                        <h3>Product name</h3>
+                        <p>Kr. 1999</p>
+                        <p>Color: Beige</p>
+                        <form>
+                            <label for="size2">Size</label>
+                            <select id="size2">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <label for="amount2">Amount</label>
+                            <input type="number" id="amount2" name="amount" min="1" max="50" value="1">
+                        </form>
+                        <aside>
+                            <ul>
+                                <li>
+                                    <button aria-label="Favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button aria-label="Remove product">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </aside>
+                    </article>
+                </section>
+                <form class="customerInformation">
+                    <h2 class="checkoutHeading">2. Your information</h2>
+                    <fieldset>
+                        <h3>Delivery Address</h3>
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Nora" pattern="[a-zA-ZæøåÆØÅ\s\-]{1,15}" required>
+
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lmane" placeholder="Nordmann" pattern="[a-zA-ZæøåÆØÅ\s\-]{1,30}" required>
+
+                        <label for="street">Address</label>
+                        <input type="text" id="street" name="street" placeholder="B R A Veien 4" maxlength="100" pattern="[a-zA-ZæøåÆØÅ0-9\s\-]{1,50}" required>
+
+                        <label for="zipcode">Zip code</label>
+                        <input type="number" id="zipcode" name="zipcode" placeholder="1752" min="1000" max="10000" required>
+
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="HALDEN" maxlength="30" pattern="[a-zA-ZæøåÆØÅ\s\-]*">
+                    </fieldset>
+                    <fieldset id="customerContactInformation">
+                        <h3>Contact Information</h3>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="halden@hiof.no" maxlength="50" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="552****5" maxlength="20">
+                    </fieldset>
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </form>
+                <section id="deliveryOptions">
+                    <h2 class="checkoutHeading">3. Delivery</h2>
+                    <form itemscope itemtype="https://schema.org/OfferShippingDetails">
+                        <h3>Delivery Options</h3>
+                        <section>
+                            <h4>
+                                <label for="expressHome">Express Home Delivery</label>
+                            </h4>
+                            <input type="radio" id="expressHome" name="delivery" value="expressHome">
+                            <p itemprop="deliveryTime">1-3 virkedager</p>
+                            <p>Fusce suscipit arcu id felis efficitur, eu ullamcorper nisl maximus. 
+                            Vestibulum vestibulum vitae elit non semper. Sed justo odio, pharetra sed finibus at, pharetra eu erat. 
+                            Cras pellentesque odio ac leo ornare lobortis. Cras feugiat ipsum ex, vel auctor sem varius sit amet.</p>
+                            <p itemprop="shippingRate">35kr <i class="fa-solid fa-truck-fast"></i></p>
+                        </section>
+                        <section>
+                            <h4>
+                                <label for="expressPickup">Express Delivery to Pickup Point</label>
+                            </h4>
+                            <input type="radio" id="expressPickup" name="delivery" value="expressPickup">
+                            <p itemprop="deliveryTime">2-4 virkedager</p>
+                            <p itemprop="shippingRate">25kr <i class="fa-solid fa-box"></i></p>
+                        </section>
+                        <section>
+                            <h4>
+                                <label for="standardHomeDelivery">Standard Home Delivery</label>
+                            </h4>
+                            <input type="radio" id="standardHomeDelivery" name="delivery" value="standardHomeDelivery" checked="checked">
+                            <p itemprop="deliveryTime">5-7 virkedager</p>
+                            <p>Fusce suscipit arcu id felis efficitur, eu ullamcorper nisl maximus. 
+                                Vestibulum vestibulum vitae elit non semper. Sed justo odio, pharetra sed finibus at, pharetra eu erat. 
+                                Cras pellentesque odio ac leo ornare lobortis. Cras feugiat ipsum ex, vel auctor sem varius sit amet.</p>
+                            <p itemprop="shippingRate">15kr <i class="fa-solid fa-house"></i></p>
+                        </section>
+                    </form>
+                </section>
+                <section id="paymentOptions">
+                    <h2 class="checkoutHeading">4. Payment</h2>
+                    <form class="customerInformation">
+                        <h3>Pay with Card <i class="fa-solid fa-credit-card"></i></h3>
+                        <fieldset>
+                            <label for="cardNumber">Card Number</label>
+                            <input type="number" id="cardNumber" name="cardNumber" placeholder="3421236****4435" max="9999999999999999" min="10000000000000000" required>
+
+                            <label for="expiryDate">Expiration Date</label>
+                            <input type="date" id="expiryDate" name="expiryDate" min="2001-01-01" max="2050-12-31" required>
+
+                            <label for="cvc">CVC/CVV</label>
+                            <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" min="100" max="1000" required>
+                        </fieldset> <!--THIS AND CARD NUMBER MBY TYPE TEXT ? so not number selector-->
+                        <p>Total, with tax</p>
+                        <p class="checkoutHeading">1 199 kr</p>
+                        <fieldset id="AdvertisementSignUp">
+                            <p>I hereby declare that the details furnished above are true and correct, 
+                                and I bear responsibility for the authenticity and accuracy of the information.
+                            </p>
+                            
+                            <input type="checkbox" id="newsletter" name="newsletter" value="unchecked">
+                            <label for="newsletter">Yes Please! Send your newsletter to my inbox</label>
+
+                            <input type="checkbox" id="textMessages" name="textMessages" value="unchecked">
+                            <label for="textMessages">I would like to receive text messages with discounts and news</label>
+                        </fieldset>
+                        <button type="submit">Complete Purchase</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <nav id="skipToTop" class="sticky"><a href="#globalHeader"><i class="fa-solid fa-chevron-up"></i>Back to Top</a></nav>
+        <footer>
+            <h3><a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a></h3>
+            <p>Duis interdum, ex vitae vulputate dictum, est quam fringilla quam, ut consectetur ante quam vitae libero</p>
+            <section id="contact" itemscope itemtype="https://schema.org/ContactPoint">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li itemprop="contactType" content="Office">Address:</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">B R A Veien 4, </span>
+                        <span itemprop="postalCode">1757</span>
+                        <span itemprop="addressRegion"> Halden</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li itemprop="contactType" content="Office">Telephone:</li>
+                    <li itemprop="telephone">69 60 80 00</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i></li>
+                    <li itemprop="contactType" content="Office">Email:</li>
+                    <li itemprop="email">halden@hiof.no</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li>Opening Hours:</li>
+                    <li itemprop="hoursAvailable" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <meta itemprop="dayOfWeek" content="Monday,Tuesday,Wednesday,Thursday,Friday">
+                        Mon-Fri:
+                        <span itemprop="opens" content="08:00">08:00</span> - 
+                        <span itemprop="closes" content="15:00">15:00</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="shortcuts">
+                <h4>Shortcuts</h4>
+                <ul>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="WCAG.pdf" target="_blank">Tilgjengelighet!</a></li>
+                </ul>
+            </section>
+            <section class="icons">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>

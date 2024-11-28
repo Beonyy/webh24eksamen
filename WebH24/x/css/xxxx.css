@@ -1,0 +1,26 @@
+body .productImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100dvw;
+  overflow: contain;
+}
+body .productImages .largeProductImages {
+  margin-left: 10px;
+  order: 2;
+  border: 3px solid black;
+}
+body .productImages .largeProductImages img {
+  max-width: 50%;
+  height: auto;
+}
+body .productImages aside {
+  max-width: 100px;
+  order: 1;
+}
+body .productImages aside picture {
+  max-width: 50%;
+}
+body .productImages aside picture image {
+  max-width: 50%;
+}/*# sourceMappingURL=xxxx.css.map */

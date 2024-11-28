@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A fictitious online store created for a project exam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="awesome/css/solid.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/fontawesome.css">
+        <link rel="stylesheet" type="text/css" href="awesome/css/brands.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="icon" href="images/heart.svg" type="image/svg+xml" id="hippo">
+        <title>Prosjekteksamen Webutvikling HIOF'24</title>
+    </head>
+    <body>
+        <header id="globalHeader">
+            <nav class="skip">
+                <a href="#main">Skip to content</a>
+            </nav>
+            <nav aria-label="Primary" id="globalNav">
+                <label aria-label="search field">
+                    <input type="search" placeholder="Search..." name="search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul id="headerLinks">
+                    <li>
+                        <a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a>
+                    </li>
+                    <!--Image by <a href="https://pixabay.com/users/biancavandijk-9606149/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Bianca Van Dijk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7089602">Pixabay</a>-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact us</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#" aria-label="User Profile"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#" aria-label="Favorites"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="checkout.html" aria-label="Checkout"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="banner" class="sidewaysScroll">
+                <article>
+                    <h2>Vivamus et nisl sed orci lobortis mollis in dolor.</h2>
+                    <p>Duis volutpat sit amet tellus vitae egestas. Ut rhoncus non arcu vitae commodo. Aliquam in turpis sed augue blandit auctor et orci id tempor lectus facilisis. </p>
+                    <a href="#">Read more</a>
+                </article>
+                <button title="scroll to the left" class="hiddenMobile"> <!--WEBAIM misfornøyd med at den ikke har tekst. la til tittel. -->
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <article class="hiddenMobile">
+                    <h2>Vivamus et nisl sed orci lobortis mollis in dolor.</h2>
+                    <p>Duis volutpat sit amet tellus vitae egestas. Ut rhoncus non arcu vitae commodo. Aliquam in turpis sed augue blandit auctor et orci id tempor lectus facilisis. </p>
+                    <a href="#">read more</a>
+                    <!--Image by <a href="https://pixabay.com/users/danielkirsch-4218687/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4747601">Daniel Kirsch</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4747601">Pixabay</a>-->
+                </article>
+                <article class="hiddenMobile">
+                    <h2>Vivamus et nisl sed orci lobortis mollis in dolor.</h2>
+                    <p>Duis volutpat sit amet tellus vitae egestas. Ut rhoncus non arcu vitae commodo. Aliquam in turpis sed augue blandit auctor et orci id tempor lectus facilisis. </p>
+                    <a href="#">Read more</a>
+                    <!--Image by <a href="https://pixabay.com/users/zsuzska321-18039025/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5516493">Zsuzsa Bóka</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5516493">Pixabay</a>-->
+                </article>
+                <article class="hiddenMobile">
+                    <h2>Vivamus et nisl sed orci lobortis mollis in dolor.</h2>
+                    <p>Duis volutpat sit amet tellus vitae egestas. Ut rhoncus non arcu vitae commodo. Aliquam in turpis sed augue blandit auctor et orci id tempor lectus facilisis. </p>
+                    <a href="#">read more</a>
+                    <!--Image by <a href="https://pixabay.com/users/welshpixie-10119553/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3732203">Delyth Williams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3732203">Pixabay</a>-->
+                </article>
+                <button  title="scroll to the right" class="hiddenMobile">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </section>
+            <section id="popularProducts">
+                <h1>Our most popular products</h1> 
+                <p class="ingress">Discover the best of the best</p>
+                <ul>
+                    <li><button type="button">Newest products</button></li>
+                    <li><button type="button">Special Prices</button></li>
+                    <li><button>Best sellers</button></li>
+                </ul>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <!--Etter Lighthouse-analyse er min-width-grensene endret i samtlige artikler.-->
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+                <article itemscope itemtype="https://schema.org/Product"> 
+                    <a href="product.html">
+                        <picture>
+                            <source srcset="images/frontpage/businessman1920.jpg" media="(min-width: 3000px)">
+                            <source srcset="images/frontpage/businessman1280.jpg" media="(min-width: 1200px)">
+                            <img itemprop="image" src="images/frontpage/businessman640.jpg" alt="Businessman in a striped sweater, with leather bag and a cup">
+                        <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1284460">Pixabay</a>-->
+                        </picture>
+                    </a>
+                    <button type="button" aria-label="Favorite"><i class="fa-regular fa-heart"></i></button>
+                    <a class="productName" href="product.html">
+                        <h3 itemprop="name">Product name</h3>
+                    </a>
+                    <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Kr <span itemprop="price">15999</span>
+                        <meta itemprop="priceCurrency" content="NOK">
+                    </p>
+                    <aside class="stars" aria-label="4 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="0">
+                            <meta itemprop="ratingValue" content="3">
+                            <meta itemprop="bestRating" content="5">
+                            <span itemprop="ratingCount">542</span> reviews
+                        </p>
+                    </aside>
+                </article>
+            </section>
+            <section id="popularCategories" itemscope itemtype="https://schema.org/ItemList">
+                <header>
+                    <h2>Our most popular categories</h2>
+                    <p class="ingress">Our most visited pages</p>
+                </header>
+                <div id="categoriesGrid">
+                    <meta itemprop="numberOfItems" content="8">
+                    <a href="#" class="first"><h3 itemprop="itemListElement">Category 1</h3></a>   
+                    <a href="#" class="second"><h3 itemprop="itemListElement">Category 2</h3></a>
+                    <a href="#" class="third"><h3 itemprop="itemListElement">Category 3</h3></a>
+                    <a href="#" class="fourth"><h3 itemprop="itemListElement">Category 4</h3></a>
+                    <a href="#" class="fifth"><h3 itemprop="itemListElement">Category 5</h3></a>
+                </div>
+            </section>
+            <section class="reviews">
+                <h2>Reviews</h2> 
+                <div class="sidewaysScroll">
+                    <article itemscope itemtype="https://schema.org/Review">
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/OnlineStore">
+                            <meta itemprop="name" content="Eksamensprosjekt">
+                            <meta itemprop="url" content="index.html">
+                        </div>
+                        <picture itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <img src="images/frontpage/goat543.jpg" itemprop="image" alt="picture of the charming author of this review"> 
+                            <!--Image by <a href="https://pixabay.com/users/klimkin-1298145/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">svklimkin</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">Pixabay</a>-->
+                        </picture>
+                        <h3 itemprop="name">Gregory Goat</h3>
+                        <p class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" role="img" aria-label="3 out of 5 stars "> <!--"role="img" etter valideringsfeil"-->
+                            <i class="fa-solid fa-star" aria-hidden="true"></i> <!--Disse aria'ene ble lagt til etter anbefaling fra Lighthouse-->
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <meta itemprop="worstRating" content="1">
+                            <meta itemprop="bestRating" content="5">
+                            <meta itemprop="ratingValue" content="3">
+                        </p>
+                        <p itemprop="reviewBody">Nullam ut ultrices lacus. Curabitur aliquet sem interdum, congue tortor in, dictum sem. 
+                            Etiam tempor justo imperdiet nisl vulputate sodales. Nunc sed metus ac lorem pellentesque malesuada ac id tortor.
+                        </p>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Review">
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/OnlineStore">
+                            <meta itemprop="name" content="Eksamensprosjekt">
+                            <meta itemprop="url" content="index.html">
+                        </div>
+                        <picture itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <img src="images/frontpage/goat543.jpg" itemprop="image" alt="picture of the charming author of this review"> 
+                            <!--Image by <a href="https://pixabay.com/users/klimkin-1298145/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">svklimkin</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">Pixabay</a>-->
+                        </picture>
+                        <h3 itemprop="name">Robert Ram</h3>
+                        <p class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" role="img" aria-label="3 out of 5 stars ">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <meta itemprop="worstRating" content="1">
+                            <meta itemprop="bestRating" content="5">
+                            <meta itemprop="ratingValue" content="3">
+                        </p>
+                        <p itemprop="reviewBody">Nullam ut ultrices lacus. Curabitur aliquet sem interdum, congue tortor in, dictum sem. 
+                            Etiam tempor justo imperdiet nisl vulputate sodales. Nunc sed metus ac lorem pellentesque malesuada ac id tortor.
+                        </p>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Review">
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/OnlineStore">
+                            <meta itemprop="name" content="Eksamensprosjekt">
+                            <meta itemprop="url" content="index.html">
+                        </div>
+                        <picture itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <img src="images/frontpage/goat543.jpg" itemprop="image" alt="picture of the charming author of this review"> 
+                            <!--Image by <a href="https://pixabay.com/users/klimkin-1298145/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">svklimkin</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">Pixabay</a>-->
+                        </picture>
+                        <h3 itemprop="name">Barry Billy Goat</h3>
+                        <p class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" role="img" aria-label="3 out of 5 stars ">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <meta itemprop="worstRating" content="1">
+                            <meta itemprop="bestRating" content="5">
+                            <meta itemprop="ratingValue" content="3">
+                        </p>
+                        <p itemprop="reviewBody">Nullam ut ultrices lacus. Curabitur aliquet sem interdum, congue tortor in, dictum sem. 
+                            Etiam tempor justo imperdiet nisl vulputate sodales. Nunc sed metus ac lorem pellentesque malesuada ac id tortor.
+                        </p>
+                    </article>
+                    <article itemscope itemtype="https://schema.org/Review">
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/OnlineStore">
+                            <meta itemprop="name" content="Eksamensprosjekt">
+                            <meta itemprop="url" content="index.html">
+                        </div>
+                        <picture itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <img src="images/frontpage/goat543.jpg" itemprop="image" alt="picture of the charming author of this review"> 
+                            <!--Image by <a href="https://pixabay.com/users/klimkin-1298145/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">svklimkin</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1596880">Pixabay</a>-->
+                        </picture>
+                        <h3 itemprop="name">Norma Nanny Goat</h3>
+                        <p class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" role="img" aria-label="3 out of 5 stars ">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <meta itemprop="worstRating" content="1">
+                            <meta itemprop="bestRating" content="5">
+                            <meta itemprop="ratingValue" content="3">
+                        </p>
+                        <p itemprop="reviewBody">Nullam ut ultrices lacus. Curabitur aliquet sem interdum, congue tortor in, dictum sem. 
+                            Etiam tempor justo imperdiet nisl vulputate sodales. Nunc sed metus ac lorem pellentesque malesuada ac id tortor.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3><a href="index.html"><img src="images/frontpage/feather.png" alt="Logo. Two feathers on streaks of orange and red in a pentagon"></a></h3>
+            <p>Duis interdum, ex vitae vulputate dictum, est quam fringilla quam, ut consectetur ante quam vitae libero</p>
+            <section id="contact" itemscope itemtype="https://schema.org/ContactPoint">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li itemprop="contactType" content="Office">Address:</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">B R A Veien 4, </span>
+                        <span itemprop="postalCode">1757</span>
+                        <span itemprop="addressRegion"> Halden</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li itemprop="contactType" content="Office">Telephone:</li>
+                    <li itemprop="telephone">69 60 80 00</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i></li>
+                    <li itemprop="contactType" content="Office">Email:</li>
+                    <li itemprop="email">halden@hiof.no</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li>Opening Hours:</li>
+                    <li itemprop="hoursAvailable" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <meta itemprop="dayOfWeek" content="Monday,Tuesday,Wednesday,Thursday,Friday">
+                        Mon-Fri:
+                        <span itemprop="opens" content="08:00">08:00</span> - 
+                        <span itemprop="closes" content="15:00">15:00</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="shortcuts">
+                <h4>Shortcuts</h4>
+                <ul>
+                    <li><a href="index.html#popularProducts">Products</a></li>
+                    <li><a href="index.html#popularCategories">Categories</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="WCAG.pdf" target="_blank">Tilgjengelighet!</a></li>
+                </ul>
+            </section>
+            <section class="icons">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+        <nav id="skipToTop" class="sticky"><a href="#globalHeader"><i class="fa-solid fa-chevron-up"></i>Back to Top</a></nav>
+    </body>
+</html>
