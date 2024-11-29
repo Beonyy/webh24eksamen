@@ -166,7 +166,6 @@
             width: 2.8rem;
             margin: 0.8rem;
             cursor: pointer;
-            
       
               i{
               position: absolute;
@@ -189,7 +188,6 @@
                 color: $white;
               }
             }
-            
           }
         }
   
@@ -231,10 +229,10 @@
     #popularCategories{
       @include flex(row, center);
       @include start_section;
-      //position: relative;
       align-items: center;
 
       header{
+        
         h2{
           width: 100%;
           font-size: 1.4rem;
@@ -301,92 +299,89 @@
             top: 0;
             left: 0;
             content: "";
-
           }
         }
 
-// MEDIA QUERIES WITH DIFFERENT SIZES PER SCREEN ? NEED URL FOR EACH SIZE
-
-        .first{
-          background-image: url("https://cdn.pixabay.com/photo/2021/09/05/15/21/lilac-breasted-roller-6599825_960_720.jpg");
+      .first{
+        background-image: url("https://cdn.pixabay.com/photo/2021/09/05/15/21/lilac-breasted-roller-6599825_960_720.jpg");
   //Image by https://pixabay.com/users/cifer88-8780108/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6599825">Cifer88</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6599825">Pixabay
-          z-index: 100;       
-        }
+        z-index: 100;       
+      }
 
-        .second{
-          background-image: url("https://cdn.pixabay.com/photo/2015/07/02/20/37/cup-829527_960_720.jpg");
-    //Image by <a href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=829527">congerdesign</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=829527">Pixabay
-        }
+      .second{
+        background-image: url("https://cdn.pixabay.com/photo/2015/07/02/20/37/cup-829527_960_720.jpg");
+  //Image by <a href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=829527">congerdesign</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=829527">Pixabay
+      }
 
-        .third{
-          background-image: url("https://cdn.pixabay.com/photo/2021/09/30/18/26/woman-6670772_960_720.jpg");
-    //Image by <a href="https://pixabay.com/users/emberglo_photography-23642775/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6670772">Ransford Quaye</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6670772">Pixabay
-            height: 75dvh;
-        }
+      .third{
+        background-image: url("https://cdn.pixabay.com/photo/2021/09/30/18/26/woman-6670772_960_720.jpg");
+  //Image by <a href="https://pixabay.com/users/emberglo_photography-23642775/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6670772">Ransford Quaye</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6670772">Pixabay
+        height: 75dvh;
+      }
 
-        .fourth{
-          background-image: url("https://cdn.pixabay.com/photo/2019/02/04/20/07/flowers-3975556_960_720.jpg");
-    //Image by <a href="https://pixabay.com/users/gershoots-18031839/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">gershoots</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">Pixabay
-        }
+      .fourth{
+        background-image: url("https://cdn.pixabay.com/photo/2019/02/04/20/07/flowers-3975556_960_720.jpg");
+  //Image by <a href="https://pixabay.com/users/gershoots-18031839/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">gershoots</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">Pixabay
+      }
 
-        .fifth{
-          background-image: url("https://cdn.pixabay.com/photo/2020/08/24/21/40/fashion-5515135_960_720.jpg")
-    //Image by <a href="https://pixabay.com/users/gershoots-18031839/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">gershoots</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">Pixabay</a>
-        }
+      .fifth{
+        background-image: url("https://cdn.pixabay.com/photo/2020/08/24/21/40/fashion-5515135_960_720.jpg")
+  //Image by <a href="https://pixabay.com/users/gershoots-18031839/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">gershoots</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5515135">Pixabay</a>
+      }
     }
   
     .reviews{
       @include start_section;
   
-        h2{
-          width: 100%;
-          font-size: 1.8rem;
-          margin: 0 0.7rem;
-          padding: 0.7rem;
-        }
+      h2{
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 0 0.7rem;
+        padding: 0.7rem;
+      }
   
-        .sidewaysScroll{
-          display: flex;
-          flex-wrap: nowrap;
-          overflow-x: auto;
+      .sidewaysScroll{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
 
-          article{
-          display: inline-block;
-          border-radius: 25px;
-          border: 2px solid $grey;
-          padding: 0.7rem;
-          margin: 0.7rem;
-          width: 12rem;
-          min-width: 250px;
-          max-width: 289px;
+        article{
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid $grey;
+        padding: 0.7rem;
+        margin: 0.7rem;
+        width: 12rem;
+        min-width: 250px;
+        max-width: 289px;
 
-          picture img{
-            border-radius: 50%;
-            width: 5.5rem;
-            height: 5.5rem;
-            overflow: hidden;
-            border: 0.5px solid $grey;
-            margin: 0.3rem; 
-          }
+        picture img{
+          border-radius: 50%;
+          width: 5.5rem;
+          height: 5.5rem;
+          overflow: hidden;
+          border: 0.5px solid $grey;
+          margin: 0.3rem; 
+        }
       
-          h3{
-            font-size: 0.7rem;
-            font-weight: 700;
-          }
+        h3{
+          font-size: 0.7rem;
+          font-weight: 700;
+        }
       
-          p{
-            padding-bottom: 0.5rem;
-            font-size: 0.6rem;
-          }
+        p{
+          padding-bottom: 0.5rem;
+          font-size: 0.6rem;
+        }
       
-          .stars{
-            @include stars;
-            padding: 0;
-            font-size: 0.7rem;;
-          }
+        .stars{
+          @include stars;
+          padding: 0;
+          font-size: 0.7rem;;
         }
       }
     }
+  }
 }
 
  //-----------------------------------------------TABLET-----------------------------
@@ -444,10 +439,6 @@
             grid-column: 2/3;
           }
         }
-      }
-
-      .reviews{
-        //margin: 10rem 0;
       }
     }
   }

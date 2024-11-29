@@ -67,11 +67,11 @@
         padding: 10px;
   
         a{
+          @include link_black;
+          
+          &:visited{
             @include link_black;
-            
-            &:visited{
-              @include link_black;
-            }
+          }
   
           img{
             max-width: 150px;
@@ -83,7 +83,6 @@
   
         &:nth-child(1){
           order: 3;
-  
         }
   
         &:nth-child(2){
@@ -101,7 +100,8 @@
         &:nth-child(5){
           order: 5;
         }
-    }}
+      } 
+    }
   
     .icons{
       @include flex(row, center);
@@ -175,7 +175,6 @@
         li{
 
           a{
-
             &:hover{
               text-decoration: underline;
             }
@@ -191,7 +190,6 @@
           padding: 0 6px;
 
           a{
-
             &:hover{
               color: $grey;
             }
@@ -200,4 +198,4 @@
       }
     }
   }
-  }
+}
